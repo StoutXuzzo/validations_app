@@ -1,0 +1,54 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="validations_app.validation_model_list">
+      <field name="name">Validation List</field>
+      <field name="model">validations_app.validation_model</field>
+      <field name="arch" type="xml">
+        <tree>
+
+          <field name="date"/>
+          <field name="module_id"/>
+          <field name="course_id"/>
+
+        </tree>
+      </field>
+    </record>
+
+    <!-- FORM -->
+
+    <record model="ir.ui.view" id="validations_app.validation_model_form">
+      <field name="name">Validation Form</field>
+      <field name="model">validations_app.validation_model</field>
+      <field name="arch" type="xml">
+        <form string="validation">
+          <header>
+            <!-- Botones aquí 
+            <button name="generatePassword" type="object" string="Generate Password" class="oe_"/>
+          -->          </header>
+          <group>
+            <group>
+              <field name="module_id"/>
+              <field name="course_id"/>
+
+            </group>
+            <group>
+              <field name="date"/>
+            </group>
+
+          </group>
+        </form>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="validations_app.action_window_validation">
+      <field name="name">Validation Window</field>
+      <field name="res_model">validations_app.validation_model</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+  </data>
+</odoo>

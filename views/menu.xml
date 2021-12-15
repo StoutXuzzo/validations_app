@@ -1,0 +1,26 @@
+<odoo>
+  <data>
+    <!-- Top menu item -->
+
+    <menuitem name="Validations App" id="validations_app.menu_root"/>
+
+    <!-- menu categories -->
+
+    <menuitem name="Tables" id="validations_app.menu_tables" parent="validations_app.menu_root"/>
+
+    <!-- actions -->
+
+    <menuitem name="Student's" id="validations_app.menu_student_list" parent="validations_app.menu_tables" 
+    action="validations_app.action_window_student"/>
+
+    <menuitem name="Course's" id="validations_app.menu_course_list" parent="validations_app.menu_tables" 
+    action="validations_app.action_window_course"/>
+
+    <menuitem name="Module's" id="validations_app.menu_module_list" parent="validations_app.menu_tables" 
+    action="validations_app.action_window_module"/>
+
+    <menuitem name="Validation's" id="validations_app.menu_validation_list" parent="validations_app.menu_tables" 
+    action="validations_app.action_window_validation"/>
+
+  </data>
+</odoo>

@@ -3,15 +3,15 @@
     'name': "validations_app",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+            Validation app
+        """,
 
     'description': """
-        Long description of module's purpose
+        An app that validates
     """,
 
-    'author': "My Company",
-    'website': "http://www.yourcompany.com",
+    'author': "Josep",
+    'website': "https://www.youtube.com/watch?v=uSX1eakWCiE&t=235s",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/14.0/odoo/addons/base/data/ir_module_category_data.xml
@@ -25,11 +25,18 @@
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
-        'views/views.xml',
-        'views/templates.xml',
+        'security/ir.model.access.csv',
+        'views/student_view.xml',
+        'views/module_view.xml',
+        'views/course_view.xml',
+        'views/validation_view.xml',
+        'views/menu.xml'
     ],
     # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',
     ],
+
+    'application' : True,
+    'installable' : True
 }
