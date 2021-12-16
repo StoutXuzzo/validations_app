@@ -9,4 +9,5 @@ class CourseModel(models.Model):
     _description = 'Course Model'
 
     name = fields.Char("Course Name", required = True)
+    modules = fields.One2many("validations_app.module_model", "course", "Course Modules")
     description = fields.Text("Course Description")

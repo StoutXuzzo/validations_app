@@ -28,8 +28,18 @@
           --></header>
           <group>
 
+            <group>
+
             <field name ="name"/>
             <field name="description"/>
+
+          </group>
+
+          <group>
+
+            <field name ="modules"/>
+
+          </group>
 
           </group>
         </form>

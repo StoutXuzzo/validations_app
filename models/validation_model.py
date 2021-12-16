@@ -8,5 +8,5 @@ class ValidationModel(models.Model):
     _description = 'Validation Model'
 
     date = fields.Date("Validation Date")
-    module_id = fields.Many2one("Validation Module")
-    course_id = fields.Many2one("Validation course")
+    module_id = fields.Many2one("validations_app.module_model","Validation Module")
+    student_id = fields.Many2one("validations_app.student_model", "Validation Student")

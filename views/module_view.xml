@@ -10,7 +10,7 @@
 
           <field name="name"/>
           <field name="hours"/>
-          <field name="description"/>
+          <field name="course"/>
 
         </tree>
       </field>
@@ -29,11 +29,15 @@
           -->          </header>
           <group>
             <group>
+            
               <field name ="name"/>
               <field name="hours"/>
+              <field name="course"/>
 
             </group>
             <group>
+              
+              <field name="validations"/>
               <field name="description"/>
             </group>
 

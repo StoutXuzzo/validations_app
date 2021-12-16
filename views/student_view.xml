@@ -6,7 +6,7 @@
       <field name="name">Student List</field>
       <field name="model">validations_app.student_model</field>
       <field name="arch" type="xml">
-        <tree>
+        <tree decoration-danger="age &lt; 18">
           
           <field name="name"/>
           <field name="age"/>
@@ -25,9 +25,9 @@
       <field name="arch" type="xml">
         <form string="Student">
           <header>
-            <!-- Botones aquí 
+            <!-- Botones aquí -->
             <button name="generatePassword" type="object" string="Generate Password" class="oe_"/>
-          --></header>
+          </header>
           <group>
             <group>
               <h1>Personal Data</h1>
@@ -39,6 +39,7 @@
 
             <group>
               <h1>Aditional Data</h1>
+              <field name="validations"/>
               <field name="city"/>
               <field name="region"/>
               <field name="email"/>
