@@ -3,3 +3,4 @@ access_validations_app_student_model,validations_app.model,model_validations_app
 access_validations_app_course_model,validations_app.model,model_validations_app_course_model,base.group_user,1,1,1,1
 access_validations_app_module_model,validations_app.model,model_validations_app_module_model,base.group_user,1,1,1,1
 access_validations_app_validation_model,validations_app.model,model_validations_app_validation_model,base.group_user,1,1,1,1
+access_validations_app_teacher_model,validations_app.model,model_validations_app_teacher_model,base.group_user,1,1,1,1

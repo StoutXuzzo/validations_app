@@ -30,6 +30,7 @@
         'views/module_view.xml',
         'views/course_view.xml',
         'views/validation_view.xml',
+        'views/teacher_view.xml',
         'views/menu.xml'
     ],
     # only loaded in demonstration mode

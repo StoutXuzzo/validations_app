@@ -22,5 +22,8 @@
     <menuitem name="Validation's" id="validations_app.menu_validation_list" parent="validations_app.menu_tables" 
     action="validations_app.action_window_validation"/>
 
+    <menuitem name="Teacher's" id="validations_app.menu_teacher_list" parent="validations_app.menu_tables"
+    action="validations_app.action_window_teacher"/>
+
   </data>
 </odoo>

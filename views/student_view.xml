@@ -30,19 +30,24 @@
           </header>
           <group>
             <group>
+
               <h1>Personal Data</h1>
               <field name="photo"/>
               <field name ="name"/>
               <field name="password"/>
               <field name="age"/>
+
             </group>
 
             <group>
+
               <h1>Aditional Data</h1>
               <field name="validations"/>
               <field name="city"/>
               <field name="region"/>
               <field name="email"/>
+              <!--<field name="teachers"/>-->
+
             </group>
 
           </group>
@@ -53,9 +58,11 @@
     <!-- actions opening views on models -->
 
     <record model="ir.actions.act_window" id="validations_app.action_window_student">
+
       <field name="name">Student Window</field>
       <field name="res_model">validations_app.student_model</field>
       <field name="view_mode">tree,form</field>
+      
     </record>
 
   </data>

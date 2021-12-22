@@ -17,6 +17,7 @@ class StudentModel(models.Model):
     region = fields.Text("Student Region")
     email = fields.Char("Student Email")
     validations = fields.One2many("validations_app.validation_model", "student_id","Student Validations")
+    teachers = fields.Many2many("validation_app.teacher_model", String = "Teaches")
 
     def generatePassword(self):
         caracteres = ascii_letters + ascii_uppercase + digits
